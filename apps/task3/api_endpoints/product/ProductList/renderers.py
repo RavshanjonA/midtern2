@@ -10,7 +10,7 @@ from rest_framework.renderers import BaseRenderer
 load_dotenv()
 
 AES_SECRET_KEY = bytes(os.getenv("AES_SECRET_KEY"), "utf-8")  # noqa
-AES_IVtask5.Goal.author = bytes(os.getenv("AES_IV"), "utf-8")  # noqa
+AES_IV = bytes(os.getenv("AES_IV"), "utf-8")  # noqa
 
 
 class ProductAesRenderer(BaseRenderer):

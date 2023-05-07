@@ -11,4 +11,4 @@ class Activate(Model):
     user = ForeignKey(User,CASCADE, 'codes')
     start_date = DateTimeField(auto_now=True)
     expire_date = DateTimeField(timezone.now()+timedelta(minutes=2))
-    code = IntegerField(default=random.randint())
+    code = IntegerField(default=random.randint(2000,5000))
